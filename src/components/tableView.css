@@ -1,0 +1,20 @@
+table{
+    border-collapse: collapse;
+}
+td{
+
+    padding: .5rem;
+}
+tr{
+    border-top: 1px solid #333;
+}
+td>span{  
+    margin: .5rem 0;
+}
+tr:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+button.tableView_key{
+    margin: .2rem 0;
+}

@@ -1,0 +1,30 @@
+{
+    "intendation": {
+      "regexp": "\\s+"
+    },
+    "keywords": {
+      "regexp": ".",
+      "color": "blue"
+    },
+    
+    "operators": {
+      "regexp": "[+-]{1,2}|={1,3}",
+      "color": "black"
+    },
+    "separators": {
+      "regexp": "[[\\])(\\}\\{:,;.]{1}",
+      "color": "black"
+    },
+    "string_const": {
+      "regexp": "\".*?\"",
+      "color": "orange"
+    },
+    "digit_const": {
+      "regexp": "\\d+\\b",
+      "color": "green"
+    },
+    "error": {
+      "regexp": ".*?(?=[\\s]|[^\\w])",
+      "color": "red"
+    }
+  }
