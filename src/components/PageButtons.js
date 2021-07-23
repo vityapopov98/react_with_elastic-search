@@ -5,13 +5,11 @@ class PageButtons extends Component{
 
     pagesButton = (props)=>{
         const pagesButtonElements = []
-        // console.log('this.state.datasetSize', this.props.datasetSize)
+
           for (let index = 0; index < props.datasetSize/props.documentPerPage; index++) {
-            //   console.log('pages buttons', pagesButtonElements)
             const buttonClassName = "btn btn-outline-primary mx-1"
               pagesButtonElements.push(
-                <button key={props.documentPerPage} 
-                        className={(props.selectedPage == index) ? `${buttonClassName} active` : buttonClassName}
+                <button className={(props.selectedPage === index) ? `${buttonClassName} active` : buttonClassName}
                         onClick={()=>{this.pageButtonClicked(index*props.documentPerPage)}} 
                         key={index}>
                             
@@ -19,7 +17,7 @@ class PageButtons extends Component{
                 </button>
               )
           }
-        //   console.log('pages buttons', pagesButtonElements)
+
           return pagesButtonElements
     }
 

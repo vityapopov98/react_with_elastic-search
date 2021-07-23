@@ -1,12 +1,11 @@
-import React, { Component, useState } from 'react'
-import {Route, BrowserRouter as Router, useParams, Link, useLocation} from 'react-router-dom'
+import React from 'react'
+import { useLocation } from 'react-router-dom'
 
 export default function Comment (){
 
  const location = useLocation()
  const comment = location.state
 
- 
     return (
         <div className="container">
             <div className="card">

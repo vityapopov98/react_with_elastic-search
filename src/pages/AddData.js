@@ -3,19 +3,7 @@ import dataset from '../datasetlong.json'
 
 class AddData extends Component{
     
-    render(){
-        return (
-           <div className="container">
-                <h1>Add Data to Elastic</h1>
-
-            <button onClick={this.sendData}>Send Data</button>
-           </div>
-        )
-    }
-
     sendData = ()=>{
-
-        console.log('sending', JSON.stringify({data: dataset}))
         dataset.forEach(element => {
             fetch('/saveToElastic',{
                 method: 'POST',
@@ -33,6 +21,16 @@ class AddData extends Component{
             })  
         });
         
+    }
+
+    render(){
+        return (
+           <div className="container">
+                <h1>Add Data to Elastic</h1>
+
+            <button onClick={this.sendData}>Send Data</button>
+           </div>
+        )
     }
 }
 
