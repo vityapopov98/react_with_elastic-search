@@ -1,3 +1,16 @@
+Test project with Elastic search.
+
+App sructure:
+1. React Client App
+2. Node.js Web server (localhost:3080)
+3. Elastic Search (localhost:9200)
+
+Elastic Search database contains /comments index
+with following objects: https://jsonplaceholder.typicode.com/comments
+
+To add data to Elastic Search quickly you can create datasetlong.json in /src React folder and use /addData page in React App.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +81,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# react_with_elastic-search
