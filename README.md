@@ -1,4 +1,4 @@
-Test project with Elastic search.
+# Test project with Elastic search.
 
 App sructure:
 1. React Client App
